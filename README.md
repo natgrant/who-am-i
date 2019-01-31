@@ -1,28 +1,45 @@
-# A starter webpack project for React
+# This ReadMe is for our team project  - week 4
+:question:
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+## Vision (Why are we building this?)
 
-* Fork this repo
-* Rename your repo according to the app you're building
+For fun/to learn React & build on Human Skills!
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && yarn
-```
+## Goals
+* Practice writing great ReadMe’s
+* To produce an app using React
+* To have fun
 
-To start the development server with a watcher that rebuilds your code, run `yarn dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
+## User Stories (Users)
+1. As a user I want to see instructions on how to play the game
+2. Users should be able to see three pictures on the screen
+3. Users should be able to see a description to one side
+4. User should pick a picture which they think best represents the image
+3. The user will submit answer and see a box with a result
+4. The user will get an explanation as to whether they have exhibited a bias
+5. The user can see links to bias/educational websites
 
-Additional components should be placed in `client/components`.
+## Todos
+- [x] Write the ReadMe
+- [ ] Commit to GitHub regularly
+- [ ] Use React to build the app
+- [ ] Work on team skills
+- [ ] Present to cohort!
 
-## Separate client/server
+## Team Composition
 
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
-yarn client
-```
-and in the other:
-```sh
-yarn server
-```
-The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
+- Communication, Trust & Commitment to role
+
+Member | Role
+------------ | -------------
+Arpo | React Team
+Nat | Product Manager/React Team
+Miju | Designer
+Alex | React Team (routes) /Git & Deploy Master
+
+## Reflections & Learnings
+- To come...
+Message Input
+
+Message nat_g_kahu
 
