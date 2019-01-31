@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-
+    "react-dom": "^16.6.1",
     "react": "^16.6.1"
     
   },
@@ -46,7 +46,7 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "jest": "^23.6.0",
-    "react-dom": "^16.6.1",
+    
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   }
