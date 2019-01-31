@@ -31,11 +31,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "react-dom": "^16.6.1",
-    "react": "^16.6.1"
-    
-  },
-  "devDependencies": {
-        "webpack": "^4.29.0",
+    "react": "^16.6.1" ,
+    "webpack": "^4.29.0",
     "superagent": "^4.0.0-beta.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -49,5 +46,9 @@
     
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
+    
+  },
+  "devDependencies": {
+   
   }
 }
