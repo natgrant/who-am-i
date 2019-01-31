@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
 import Pictures from "./Pictures";
-import results from "../../data/results";
 import { HashRouter as Router, Route } from "react-router-dom";
-
+import results from "../../data/results";
+import Description from "./Description"
 const header = "Who Am I?";
 
 class App extends Component {
@@ -31,6 +31,11 @@ class App extends Component {
           description.. don't take too long to think about it.
         </SweetAlert>
         <h1>{header}</h1>
+
+        <div calssName = "descripiton">
+        <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
+        </div>
+
         <button onClick={this.toggleResult}>Check My Result</button>
 
         <Pictures />
