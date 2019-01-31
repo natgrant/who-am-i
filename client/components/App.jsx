@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
-import Game from "./Game";
+import Pictures from "./Pictures";
 import results from "../../data/results";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 const header = "Who Am I?";
 
@@ -30,9 +31,9 @@ class App extends Component {
           description.. don't take too long to think about it.
         </SweetAlert>
         <h1>{header}</h1>
-
         <button onClick={this.toggleResult}>Check My Result</button>
 
+        <Pictures />
         <Result
           isShowing={this.state.showingResult}
           name={this.state.results.answer}
