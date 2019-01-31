@@ -4,7 +4,7 @@ import Result from "./Result";
 import Game from "./Game";
 import results from "../../data/results";
 
-const header = "Who Am I?";
+const header = "Who Am I ?";
 
 class App extends Component {
   constructor(props) {

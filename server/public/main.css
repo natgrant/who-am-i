@@ -1,0 +1,25 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(to right top, #e7e9f3, #e2e5f2, #dde0f1, #d8dcef, #d3d8ee, #cddbf0, #c7ddf0, #c2e0ef, #c4e8eb, #cfede4, #dff1e0, #f2f4df);
+   
+}
+.imgbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ .description{ 
+     width:70%;
+    height:200px;
+    background:#FFF;
+    margin:40px auto;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+
+}
+
+.picture {
+
+}
