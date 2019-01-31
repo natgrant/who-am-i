@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "webpack": "^4.29.0",
     "superagent": "^4.0.0-beta.5"
   },
   "devDependencies": {
@@ -44,7 +45,7 @@
     "jest": "^23.6.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "webpack": "^4.29.0",
+    
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   }
