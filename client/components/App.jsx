@@ -17,10 +17,14 @@ class App extends Component {
     this.setState({ showingResult: !this.state.showingResult });
   }
   render() {
-    const { isOpened } = this.state;
     return (
       <div>
-        <SweetAlert info title="Let's play a game!" onConfirm={this.hideAlert}>
+        <SweetAlert
+          show={this.state.show}
+          info
+          title="Let's play a game!"
+          onConfirm={() => this.setState({ show: false })}
+        >
           Hey there! Please read the description provided on this page and
           select the image which you believe most accurately represents that
           description.. don't take too long to think about it.
