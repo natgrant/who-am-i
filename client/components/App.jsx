@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
 import Pictures from "./Pictures";
-import { HashRouter as Router, Route } from "react-router-dom";
 import results from "../../data/results";
 import Description from "./Description"
 const header = "Who Am I?";
