@@ -3,6 +3,11 @@ body {
     background-image: linear-gradient(to right top, #e7e9f3, #e2e5f2, #dde0f1, #d8dcef, #d3d8ee, #cddbf0, #c7ddf0, #c2e0ef, #c4e8eb, #cfede4, #dff1e0, #f2f4df);
    
 }
+header {
+    font-size: 40px;
+    display:center;
+    
+}
 .imgbox {
     display: flex;
     flex-wrap: wrap;
@@ -10,8 +15,8 @@ body {
  }
 
  .description{ 
-     width:70%;
-    height:200px;
+    width:400px;
+    height:300px;
     background:#FFF;
     margin:40px auto;
     -webkit-box-shadow: 0 10px 6px -6px #777;

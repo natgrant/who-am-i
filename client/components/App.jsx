@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
-import Game from "./Game";
+import Pictures from "./Pictures";
 import results from "../../data/results";
-
-const header = "Who Am I ?";
+import Description from "./Description"
+const header = "Who Am I?";
 
 class App extends Component {
   constructor(props) {
@@ -31,8 +31,13 @@ class App extends Component {
         </SweetAlert>
         <h1>{header}</h1>
 
+        <div calssName = "descripiton">
+        <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
+        </div>
+
         <button onClick={this.toggleResult}>Check My Result</button>
 
+        <Pictures />
         <Result
           isShowing={this.state.showingResult}
           name={this.state.results.answer}
