@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
 import Pictures from "./Pictures";
-import { HashRouter as Router, Route } from "react-router-dom";
 import results from "../../data/results";
 import Description from "./Description"
 const header = "Who Am I?";
@@ -17,7 +16,7 @@ class App extends Component {
   toggleResult() {
     this.setState({ showingResult: !this.state.showingResult });
   }
-  render() {
+  render() {0
     return (
       <div>
         <SweetAlert
@@ -32,9 +31,9 @@ class App extends Component {
         </SweetAlert>
         <h1>{header}</h1>
 
-        <div calssName = "descripiton">
+        {/* <div className = "description"> */}
         <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
-        </div>
+        {/* </div> */}
 
         <button onClick={this.toggleResult}>Check My Result</button>
 
