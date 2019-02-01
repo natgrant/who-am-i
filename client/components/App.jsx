@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
+import Pictures from "./Pictures";
 import results from "../../data/results";
 import Description from "./Description"
 import Pictures from "./Pictures"
@@ -17,7 +18,7 @@ class App extends Component {
   toggleResult() {
     this.setState({ showingResult: !this.state.showingResult });
   }
-  render() {
+  render() {0
     return (
       <div>
         <SweetAlert
@@ -31,7 +32,10 @@ class App extends Component {
           description.. don't take too long to think about it.
         </SweetAlert>
         <h1>{header}</h1>
-        <div calssName = "descripition">
+
+   
+
+         <div className = "description"> 
         <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
         </div>
 
@@ -41,7 +45,7 @@ class App extends Component {
           isShowing={this.state.showingResult}
           name={this.state.results.answer}
         />
-        <Pictures onClick={this.toggleResult}/>
+        <Pictures />
       </div>
     );
   }

@@ -11,17 +11,17 @@ const Pictures = props => {
     {
       id: 1,
       name: "Bob",
-      photo: "/images/bob.jpg"
+      photo: "/images/person1.png"
     },
     {
       id: 2,
       name: "Bob",
-      photo: "/images/bob.jpg"
+      photo: "/images/person2.png"
     },
     {
       id: 3,
       name: "Bob",
-      photo: "/images/bob.jpg"
+      photo: "/images/person3.png"
     }
   ];
 
