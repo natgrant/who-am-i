@@ -1,5 +1,5 @@
 # This ReadMe is for our team project  - week 4
-Who AM I :question:
+Who am I :question:
 
 ## Vision (Why are we building this?)
 
