@@ -51,7 +51,7 @@ class Pictures extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="picture1">
+        <div className="picture">
           {this.state.data.map((item, key) => (
             <img
               id={item.id}
