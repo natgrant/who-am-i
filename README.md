@@ -21,9 +21,9 @@ For fun/to learn React & build on Human Skills!
 
 ## Todos
 - [x] Write the ReadMe
-- [ ] Commit to GitHub regularly
-- [ ] Use React to build the app
-- [ ] Work on team skills
+- [x] Commit to GitHub regularly
+- [x] Use React to build the app
+- [x] Work on team skills
 - [ ] Present to cohort!
 
 ## Team Composition
@@ -38,8 +38,6 @@ Miju | Designer
 Alex | React Team (routes) /Git & Deploy Master
 
 ## Reflections & Learnings
-- To come...
-Message Input
 
-Message nat_g_kahu
+- To be discussed
 
