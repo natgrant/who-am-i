@@ -1,6 +1,8 @@
 import React from "react";
-import pictures from "../../data/pictures";
+
 import SweetAlert from "react-bootstrap-sweetalert";
+
+import pictures from "../../data/pictures";
 
 class Pictures extends React.Component {
   //Need the three images to be added here with click events
@@ -15,17 +17,17 @@ class Pictures extends React.Component {
         {
           id: 1,
           message: "biased 1",
-          photo: "/images/bob.jpg"
+          photo: "/images/person1.png"
         },
         {
           id: 2,
           message: "biased 2",
-          photo: "/images/bob.jpg"
+          photo: "/images/person2.png"
         },
         {
           id: 3,
           message: "biased 3",
-          photo: "/images/bob.jpg"
+          photo: "/images/person3.png"
         }
       ],
       clickedId: null
