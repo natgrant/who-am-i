@@ -1,65 +1,69 @@
-<<<<<<< HEAD
-.img-size {
-  width: 200px;
-  height: 200px;
-}
-||||||| merged common ancestors
-=======
 body {
-    font-family: 'Major Mono Display', monospace;
-    background-image: linear-gradient(to right top, #e7e9f3, #e2e5f2, #dde0f1, #d8dcef, #d3d8ee, #cddbf0, #c7ddf0, #c2e0ef, #c4e8eb, #cfede4, #dff1e0, #f2f4df);
-    color: #070E33;
-
+  font-family: "Major Mono Display", monospace;
+  background-image: linear-gradient(
+    to right top,
+    #e7e9f3,
+    #e2e5f2,
+    #dde0f1,
+    #d8dcef,
+    #d3d8ee,
+    #cddbf0,
+    #c7ddf0,
+    #c2e0ef,
+    #c4e8eb,
+    #cfede4,
+    #dff1e0,
+    #f2f4df
+  );
+  color: #070e33;
 }
 
 header {
-    font-size: 40px;
-    display:center;
+  font-size: 40px;
+  display: center;
 }
 
 .imgbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }
-
- .description { 
-    font-family: 'Roboto';
-    border-radius: 8%;
-    width:280px;
-    height:280px;
-    background:rgb(233, 237, 245);
-    margin:20px auto;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px rgb(82, 79, 79);
-         box-shadow: 0 10px 6px -6px #777;
-    color: #102178;
-    text-align: center;
-    padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-h1  {
-    color: #102178;
-    display: flex;
-    width: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-size: 4rem;
- }
-  
- .picture {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }
- 
- .picture img { 
-     max-width: 300px;
-     max-height:300px;
-     height:auto;
-     width: auto; 
-     margin: 10px;
-  }
-  
->>>>>>> origin
+.description {
+  font-family: "Roboto";
+  border-radius: 8%;
+  width: 280px;
+  height: 280px;
+  background: rgb(233, 237, 245);
+  margin: 20px auto;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px rgb(82, 79, 79);
+  box-shadow: 0 10px 6px -6px #777;
+  color: #102178;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #102178;
+  display: flex;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.picture img {
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
