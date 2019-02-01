@@ -71,7 +71,7 @@ class Pictures extends React.Component {
             onConfirm={() => this.setState({ clickedId: null })}
           >
             <p>
-              Looks like you're displaying signs of implicit bias - it might
+              Looks like you're displaying signs of implicit bias - it might be
               time to take a good hard look at yourself.
               <br />
               <a href="https://www.psychologytoday.com/us/blog/sound-science-sound-policy/201501/overcoming-implicit-bias-and-racial-anxiety">
