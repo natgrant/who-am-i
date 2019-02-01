@@ -4,7 +4,6 @@ import Result from "./Result";
 import Pictures from "./Pictures";
 import results from "../../data/results";
 import Description from "./Description"
-import Pictures from "./Pictures"
 
 const header = "Who Am I?";
 
