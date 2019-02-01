@@ -1,5 +1,6 @@
 import React from "react";
-import pictures from "../../data/pictures";
+// import pictures from "../../data/pictures";
+// import { Link } from "react-router-dom" 
 
 const Pictures = props => {
   //Need the three images to be added here with click events
@@ -32,6 +33,7 @@ const Pictures = props => {
     <React.Fragment>
       <div className="picture">
         {people.map((item, key) => (
+          
           <img src={item.photo} key={key} />
         ))}
         {/* <img src={profile.photo} alt="who am i" /> */}

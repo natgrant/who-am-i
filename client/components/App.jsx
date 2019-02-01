@@ -4,6 +4,7 @@ import Result from "./Result";
 import Pictures from "./Pictures";
 import results from "../../data/results";
 import Description from "./Description"
+
 const header = "Who Am I?";
 
 class App extends Component {
@@ -31,17 +32,19 @@ class App extends Component {
         </SweetAlert>
         <h1>{header}</h1>
 
-        {/* <div className = "description"> */}
+   
+
+         <div className = "description"> 
         <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
-        {/* </div> */}
+        </div>
 
-        <button onClick={this.toggleResult}>Check My Result</button>
 
-        <Pictures />
+
         <Result
           isShowing={this.state.showingResult}
           name={this.state.results.answer}
         />
+        <Pictures />
       </div>
     );
   }
