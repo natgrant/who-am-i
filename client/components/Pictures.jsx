@@ -24,17 +24,53 @@ const Pictures = props => {
     }
   ];
 
+  const data = [
+    {
+      id: 1,
+      message: "biased 1",
+      photo: "/images/bob.jpg"
+    },
+    {
+      id: 2,
+      message: "biased 2",
+      photo: "/images/bob.jpg"
+    },
+    {
+      id: 3,
+      message: "biased 3",
+      photo: "/images/bob.jpg"
+    }
+  ];
+
   // const id = 1;
   // const profile = pictures.find(item => item.id === id);
   // console.log(profile);
 
   return (
     <React.Fragment>
-      <div className="picture">
-        {people.map((item, key) => (
-          <img src={item.photo} key={key} />
-        ))}
+      <div className="picture1">
+        {/* {people.map((item, key) => (
+          <img className={`img-size id${item.id}`} src={item.photo} key={key} />
+        ))} */}
         {/* <img src={profile.photo} alt="who am i" /> */}
+        {/* <img
+          src="/images/bob.jpg"
+          style={{ width: "100px" }}
+          onClick={() => {
+            alert("click");
+          }}
+        /> */}
+
+        {data.map((item, key) => (
+          <img
+            className={`img-size id${item.id}`}
+            src={item.photo}
+            key={key}
+            onClick={() => {
+              alert(item.message);
+            }}
+          />
+        ))}
       </div>
     </React.Fragment>
   );
