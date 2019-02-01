@@ -32,7 +32,7 @@ class App extends Component {
         <h1>{header}</h1>
 
         {/* <div className = "description"> */}
-        <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
+        <Description name = "Taylor" occupation = "Hairdresser" hobby = "Motorcross" />
         {/* </div> */}
 
         <button onClick={this.toggleResult}>Check My Result</button>
