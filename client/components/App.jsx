@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
-import Game from "./Game";
+// import Game from "./Game";
 import results from "../../data/results";
 
 const header = "Who Am I?";
