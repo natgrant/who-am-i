@@ -3,7 +3,7 @@ import SweetAlert from "react-bootstrap-sweetalert";
 import Result from "./Result";
 import Pictures from "./Pictures";
 import results from "../../data/results";
-import Description from "./Description"
+import Description from "./Description";
 
 const header = "Who Am I?";
 
@@ -17,7 +17,8 @@ class App extends Component {
   toggleResult() {
     this.setState({ showingResult: !this.state.showingResult });
   }
-  render() {0
+  render() {
+    0;
     return (
       <div>
         <SweetAlert
@@ -32,13 +33,13 @@ class App extends Component {
         </SweetAlert>
         <h1>{header}</h1>
 
-   
-
-         <div className = "description"> 
-        <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
+        <div className="description">
+          <Description
+            name="Taylor"
+            occupation="Hairdresser"
+            hobby="Outdoor activities"
+          />
         </div>
-
-
 
         <Result
           isShowing={this.state.showingResult}
