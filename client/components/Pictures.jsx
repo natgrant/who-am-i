@@ -1,79 +1,89 @@
 import React from "react";
 import pictures from "../../data/pictures";
+import SweetAlert from "react-bootstrap-sweetalert";
 
-const Pictures = props => {
+class Pictures extends React.Component {
   //Need the three images to be added here with click events
   // console.log(params);
   // const id = Number(match.params.id);
 
-  const people = [
-    {
-      id: 1,
-      name: "Bob",
-      photo: "/images/bob.jpg"
-    },
-    {
-      id: 2,
-      name: "Bob",
-      photo: "/images/bob.jpg"
-    },
-    {
-      id: 3,
-      name: "Bob",
-      photo: "/images/bob.jpg"
-    }
-  ];
+  constructor(props) {
+    super(props);
 
-  const data = [
-    {
-      id: 1,
-      message: "biased 1",
-      photo: "/images/bob.jpg"
-    },
-    {
-      id: 2,
-      message: "biased 2",
-      photo: "/images/bob.jpg"
-    },
-    {
-      id: 3,
-      message: "biased 3",
-      photo: "/images/bob.jpg"
-    }
-  ];
+    this.state = {
+      data: [
+        {
+          id: 1,
+          message: "biased 1",
+          photo: "/images/bob.jpg"
+        },
+        {
+          id: 2,
+          message: "biased 2",
+          photo: "/images/bob.jpg"
+        },
+        {
+          id: 3,
+          message: "biased 3",
+          photo: "/images/bob.jpg"
+        }
+      ],
+      clickedId: null
+    };
 
-  // const id = 1;
-  // const profile = pictures.find(item => item.id === id);
-  // console.log(profile);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  return (
-    <React.Fragment>
-      <div className="picture1">
-        {/* {people.map((item, key) => (
-          <img className={`img-size id${item.id}`} src={item.photo} key={key} />
-        ))} */}
-        {/* <img src={profile.photo} alt="who am i" /> */}
-        {/* <img
-          src="/images/bob.jpg"
-          style={{ width: "100px" }}
-          onClick={() => {
-            alert("click");
-          }}
-        /> */}
+  handleClick(event) {
+    event.preventDefault();
 
-        {data.map((item, key) => (
-          <img
-            className={`img-size id${item.id}`}
-            src={item.photo}
-            key={key}
-            onClick={() => {
-              alert(item.message);
-            }}
-          />
-        ))}
-      </div>
-    </React.Fragment>
-  );
-};
+    let clickedId = event.target.id;
+
+    console.log("You clicked " + clickedId);
+
+    this.setState({
+      clickedId: clickedId
+    });
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div className="picture1">
+          {this.state.data.map((item, key) => (
+            <img
+              id={item.id}
+              className={`img-size id${item.id}`}
+              src={item.photo}
+              key={key}
+              onClick={this.handleClick}
+            />
+          ))}
+        </div>
+
+        {this.state.clickedId && (
+          <SweetAlert
+            show={this.state.show}
+            danger
+            title="WHOOPS"
+            onConfirm={() => this.setState({ clickedId: null })}
+          >
+            <p>
+              Looks like you're displaying signs of implicit bias - it might
+              time to take a good hard look at yourself.
+              <br />
+              <a href="https://www.psychologytoday.com/us/blog/sound-science-sound-policy/201501/overcoming-implicit-bias-and-racial-anxiety">
+                Click here
+              </a>{" "}
+              for more information.
+            </p>
+            {/* Find the record in the data that matches the this.state.clickedId
+            and display it's message */}
+          </SweetAlert>
+        )}
+      </React.Fragment>
+    );
+  }
+}
 
 export default Pictures;
