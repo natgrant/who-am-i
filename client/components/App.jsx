@@ -31,9 +31,9 @@ class App extends Component {
         </SweetAlert>
         <h1>{header}</h1>
 
-        <div calssName = "descripiton">
+        {/* <div className = "description"> */}
         <Description name = "Bob" occupation = "builder" hobby = "motorbike" />
-        </div>
+        {/* </div> */}
 
         <button onClick={this.toggleResult}>Check My Result</button>
 
