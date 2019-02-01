@@ -9,17 +9,17 @@ const Pictures = props => {
   const people = [
     {
       id: 1,
-      name: "Bob",
+      name: "Taylor",
       photo: "/images/person1.png"
     },
     {
       id: 2,
-      name: "Bob",
+      name: "Alex",
       photo: "/images/person2.png"
     },
     {
       id: 3,
-      name: "Bob",
+      name: "Sam",
       photo: "/images/person3.png"
     }
   ];

@@ -19,13 +19,10 @@ header {
  .description { 
     font-family: 'Roboto';
     border-radius: 8%;
-    width:280px;
-    height:280px;
-    background:rgb(233, 237, 245);
+    width:350px;
+    height:230px;
+    background: #fff;
     margin:20px auto;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px rgb(82, 79, 79);
-         box-shadow: 0 10px 6px -6px #777;
     color: #102178;
     text-align: center;
     padding-top: 50px;
