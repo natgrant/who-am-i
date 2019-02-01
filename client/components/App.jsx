@@ -16,7 +16,7 @@ class App extends Component {
   toggleResult() {
     this.setState({ showingResult: !this.state.showingResult });
   }
-  render() {
+  render() {0
     return (
       <div>
         <SweetAlert
