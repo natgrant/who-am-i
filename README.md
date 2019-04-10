@@ -24,7 +24,7 @@ For fun/to learn React & build on Human Skills!
 - [x] Commit to GitHub regularly
 - [x] Use React to build the app
 - [x] Work on team skills
-- [ ] Present to cohort!
+- [x] Present to cohort!
 
 ## Team Composition
 
@@ -37,7 +37,4 @@ Nat | Product Manager/React Team
 Miju | Designer
 Alex | React Team (routes) /Git & Deploy Master
 
-## Reflections & Learnings
-
-- To be discussed
 
